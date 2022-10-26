@@ -22,8 +22,8 @@ app.get('/courses/:id', (req, res)=>{
 });
 
 
-
-
 app.listen(port, ()=>{
     console.log('learning server is running', port);
-})
+});
+
+module.exports = app;
