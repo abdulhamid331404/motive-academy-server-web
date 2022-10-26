@@ -11,6 +11,7 @@ app.get('/', (req, res)=>{
     res.send('All Course Cumming soon')
 });
 
+
 app.get('/courses', (req, res)=>{
     res.send(courses)
 });
@@ -21,9 +22,9 @@ app.get('/courses/:id', (req, res)=>{
    res.send(getSingleItem)
 });
 
-
 app.listen(port, ()=>{
     console.log('learning server is running', port);
 });
+
 
 module.exports = app;
